@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APA ITT 7ma Edicion</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav__container" role="tablist">
+            <li class="nav-link" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1">Archivos</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2">Informes</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3">Libros</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4">Paginas Web</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5">Patentes</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-6" id="tab-6">Revista</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-7" id="tab-7">Redes sociales,
+                aplicaciones y otros
+                medios audiovisuales</li>
+            <li class="nav-link" role="tab" aria-selected="false" aria-controls="panel-8" id="tab-8">Tesis y
+                disertaciones</li>
+        </ul>
+    </nav>
+    <main class="main">
+        <h1>Generador APA</h1>
+
+        <section role="tabpanel" aria-labelledby="tab-1" id="panel-1">
+            <form class="form" id="files">
+                <h2 class="form-title">Archivo Sacado de Internet</h2>
+                <div class="data-container">
+                    <label for="file-input-autores">Autor(es):</label>
+                    <input type="text" id="file-input-autores">
+
+                    <label for="file-input-fecha">Fecha publicación:</label>
+                    <input type="text" id="file-input-fecha" placeholder="día de mes de año">
+
+                    <label class="required" for="file-input-titulo">Titulo del archivo:</label>
+                    <input type="text" id="file-input-titulo">
+
+                    <label class="required" for="file-input-type">Tipo de Archivo</label>
+                    <select name="input-type" id="file-input-type">
+                        <option value="PDF">PDF</option>
+                        <option value="PowerPoint">PowerPoint</option>
+                        <option value="Word">Word</option>
+                        <option value="de Video">Youtube</option>
+                        <option value="Excel">Excel</option>
+                    </select>
+
+                    <label class="required" for="file-input-url">URL:</label>
+                    <input type="text" id="file-input-url">
+
+                    <button class="submit-btn" type="submit">Generar</button>
+
+                    <div class="response">
+                    </div>
+                </div>
+
+            </form>
+        </section>
+        <section role="tabpanel" aria-labelledby="tab-3" id="panel-3">
+            <form class="form" id="chapter-book">
+                <h2 class="form-title">Capitulo de un Libro</h2>
+                <div class="data-container">
+                    <label class="required" for="bookChapter-input-autores">Autor(es):</label>
+                    <input type="text" id="bookChapter-input-autores">
+
+                    <label class="required" for="bookChapter-input-fecha">Año de publicación:</label>
+                    <input type="text" id="bookChapter-input-fecha">
+
+                    <label class="required" for="bookChapter-input-titulo">Titulo del capitulo:</label>
+                    <input type="text" id="bookChapter-input-titulo">
+
+                    <label class="required" for="bookChapter-input-lugar">Lugar de publicación:</label>
+                    <input type="text" id="bookChapter-input-lugar">
+
+                    <label class="required" for="bookChapter-input-editorial">Editorial:</label>
+                    <input type="text" id="bookChapter-input-editorial">
+
+                    <label class="required" for="bookChapter-input-libro">Titulo del libro:</label>
+                    <input type="text" id="bookChapter-input-libro">
+
+                    <label class="required" for="bookChapter-input-paginas">Páginas:</label>
+                    <input type="text" id="bookChapter-input-paginas" placeholder="xx-xx">
+
+                    <label for="bookChapter-input-url">URL:</label>
+                    <input type="text" id="bookChapter-input-url">
+
+                    <button class="submit-btn" type="submit">Generar</button>
+
+                    <div class="response">
+                    </div>
+                </div>
+            </form>
+            <form class="form" id="book">
+                <h2 class="form-title">Libros</h2>
+                <div class="data-container">
+                    <label class="required" for="book-input-autores">Autor(es):</label>
+                    <input type="text" id="book-input-autores">
+
+                    <label for="book-input-fecha">Año de publicación:</label>
+                    <input type="text" id="book-input-fecha">
+
+                    <label class="required" for="book-input-titulo">Nombre del libro:</label>
+                    <input type="text" id="book-input-titulo">
+
+                    <label class="required" for="book-input-editorial">Editorial:</label>
+                    <input type="text" id="book-input-editorial">
+
+                    <label for="book-input-url">URL:</label>
+                    <input type="text" id="book-input-url">
+
+                    <button class="submit-btn" type="submit">Generar</button>
+
+                    <div class="response">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section role="tabpanel" aria-labelledby="tab-4" id="panel-4">
+            <form class="form" id="freq-update">
+                <h2 class="form-title">Páginas Web con Actualizaciones Frecuentes</h2>
+                <div class="data-container">
+                    <label for="update-input-autores">Autor(es):</label>
+                    <input type="text" id="update-input-autores">
+
+                    <label for="update-input-fecha">Fecha publicación:</label>
+                    <input type="text" id="update-input-fecha" placeholder="día de mes de año">
+
+                    <label class="required" for="update-input-titulo">Titulo del artículo:</label>
+                    <input type="text" id="update-input-titulo">
+
+                    <label class="required" for="update-input-origen">Nombre de la página web:</label>
+                    <input type="text" id="update-input-origen">
+
+                    <label for="update-input-recuperado">Fecha de recuperación del documento:</label>
+                    <input type="text" id="update-input-recuperado" placeholder="día de mes de año">
+
+                    <label class="required" for="update-input-url">URL:</label>
+                    <input type="text" id="update-input-url">
+
+                    <button class="submit-btn" type="submit">Generar</button>
+
+                    <div class="response">
+                    </div>
+                </div>
+
+            </form>
+            <form class="form" id="static-content">
+                <h2 class="form-title">Páginas Web con Contenido Estático</h2>
+                <div class="data-container">
+                    <label for="static-input-autores">Autor(es):</label>
+                    <input type="text" id="static-input-autores">
+
+                    <label for="static-input-fecha">Fecha publicación:</label>
+                    <input type="text" id="static-input-fecha" placeholder="día de mes de año">
+
+                    <label class="required" for="static-input-titulo">Titulo del artículo:</label>
+                    <input type="text" id="static-input-titulo">
+
+                    <label class="required" for="static-input-origen">Nombre de la página web:</label>
+                    <input type="text" id="static-input-origen">
+
+                    <label class="required" for="static-input-url">URL:</label>
+                    <input type="text" id="static-input-url">
+
+                    <button class="submit-btn" type="submit">Generar</button>
+
+                    <div class="response">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
